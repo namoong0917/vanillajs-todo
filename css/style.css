@@ -1,0 +1,138 @@
+@charset "UTF-8";
+@import "./reset.css";
+
+.hidden {
+  display: none;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 20px;
+}
+section #weather {
+  color: #fff;
+  margin-bottom: 20px;
+}
+section #clock {
+  font-size: 8rem;
+  color: #fff;
+}
+section .contents {
+  background: #fff;
+  border-radius: 20px;
+  opacity: .9;
+  /* display: flex;
+  align-items: center;
+  flex-direction: column; */
+  padding: 20px;
+  min-width: 300px;
+}
+section #greeting {
+  font-size: 2rem;
+  text-align: center;
+}
+section #login-form input {
+  border-radius: 8px 8px 0 0;
+  height: 25px;
+  border: none;
+  padding: 0 10px;
+  width: 100%;
+  max-width: 190px;
+  border-bottom: 1px solid #000;
+}
+section #login-form input:focus {
+  border: none;
+  outline: 1px solid #000;
+}
+
+
+section #todo-form {
+  margin: 20px 0 20px;
+}
+section #todo-form input {
+  height: 25px;
+  border: none;
+  padding: 0 10px;
+  width: 100%;
+  max-width: 190px;
+  border-radius: 8px 8px 0 0;
+  border-bottom: 1px solid #000;
+}
+section #todo-form input:focus {
+  border: none;
+  outline: 1px solid #000;
+}
+
+section #todo-list {
+  margin-top: 20px;
+  background: #fff;
+  opacity: .9;
+  border-radius: 20px;
+  padding: 20px;
+  max-height: 280px;
+  min-width: 300px;
+  max-width: 300px;
+  overflow: hidden;
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+section #todo-list li {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+section #todo-list li:hover {
+  outline: 1px solid #ddd;
+}
+
+section #todo-list li + li{
+  margin-top: 20px;
+}
+section #todo-list li button {
+  margin-left: 20px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  transition: all .4s;
+}
+
+section #quotes {
+  margin: 50px 0;
+  text-align: center;
+  background: #fff;
+  border-radius: 20px;
+  padding: 20px;
+  opacity: .9;
+}
+section #quotes span {
+  display: block;
+  color: #000;
+  font-size: 2rem;
+  font-style: italic;
+}
+section #quotes span:last-child {
+  margin-top: 10px;
+  font-size: 1.4rem;
+}
+
+
+@media (max-width: 767px) {
+  section #clock {
+    font-size: 7rem;
+  }
+  section #quotes span {
+    font-size: 1.6rem;
+  }
+}
