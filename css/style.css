@@ -24,6 +24,7 @@ body section {
 section #weather {
   color: #fff;
   margin-bottom: 20px;
+  text-align: center;
 }
 section #clock {
   font-size: 8rem;
